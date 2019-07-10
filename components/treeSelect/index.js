@@ -30,7 +30,7 @@ export default class TreeSelect extends Component {
     this.routes = [];
     this.state = {
       nodesStatus: this._initNodesStatus(),
-      currentNode: null,
+      currentNode: props.currentNode || null,
       searchValue: ''
     };
   }
